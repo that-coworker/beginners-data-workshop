@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- TOWNCRIER -->
+## [1.2.0] - 2024-07-06
+
+- **Behind-the-scenes**
+  - Upgrade Python to 3.12.4
+  - Reverting to a simplified setup by creating a virtual environment and using pip directly
+  - Temporarily removed flake8, pylint, black & other linters for Europython 2024 while a simpler setup is tested.
+  - Adding Dockerfile
+- **Workshop materials**
+  - Reviewed all workshop materials for deprecations.
+  - Simplified solutions.
 
 ## [1.1.0] - 2022-07-10
 
