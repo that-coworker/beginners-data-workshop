@@ -33,5 +33,7 @@ COPY . /app
 # Expose the port jupyter-lab will run on
 EXPOSE 8888
 
+ENV JUPYTER_TOKEN=mysecrettoken
+
 # Run jupyter-lab without starting a browser
-CMD ["jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["sh", "-c", "jupyter-lab --no-browser --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=${JUPYTER_TOKEN}"]
